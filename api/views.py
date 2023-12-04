@@ -102,7 +102,7 @@ def generar_excel(request):
             hoja_excel.column_dimensions['E'].width = 34.86
             hoja_excel.column_dimensions['F'].width = 8
             hoja_excel.column_dimensions['I'].width = 11
-            hoja_excel.column_dimensions['H'].width = 11
+            hoja_excel.column_dimensions['H'].width = 15
             hoja_excel.column_dimensions['G'].width = 7
 
             
