@@ -17,7 +17,7 @@ class BodegaSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ObjetoSerializer(serializers.ModelSerializer):
-    categoria = serializers.PrimaryKeyRelatedField(queryset=Categoria.objects.all())
+    categoria = serializers.StringRelatedField()
     class Meta:
         model = Objeto
         fields = '__all__'

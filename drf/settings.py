@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mv&us85d-2@*q#c58#skz34toi9kl-7qph2(h%a26drf-!523i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["trasteat.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -45,10 +45,9 @@ INSTALLED_APPS = [
 
 #configuracion de CORS
 CORS_ALLOW_ALL_ORIGINS = False
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://front-trasteat-e0816f908339.herokuapp.com",
-    "http://trasteat.space",  # Agrega aquí los orígenes permitidos
+    "https://front-trasteat-e0816f908339.herokuapp.com", "http://trasteat.space", "http://localhost:3000", # Agrega aquí los orígenes permitidos
 ]
 
 CORS_ALLOW_METHODS = [
@@ -119,7 +118,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 
 
