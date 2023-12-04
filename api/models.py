@@ -54,7 +54,7 @@ class Bodega (models.Model):
 class Objeto (models.Model):
     idObjeto = models.AutoField(primary_key=True, verbose_name='ID')
     nombre = models.CharField(max_length=50, verbose_name='Nombre del objeto')
-    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
+    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, verbose_name='Categoria')
     largo = models.FloatField(verbose_name='Largo (m)')
     ancho = models.FloatField(verbose_name='Ancho (m)')
     alto = models.FloatField(verbose_name='Alto (m)')
@@ -66,6 +66,9 @@ class Objeto (models.Model):
 
     def __str__(self):
         return self.nombre
+
+    def nombre_categoria(self):
+        return self.categoria.nombre
 
     class Meta:
         verbose_name = 'Objeto'

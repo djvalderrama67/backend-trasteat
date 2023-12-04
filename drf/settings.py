@@ -46,7 +46,9 @@ INSTALLED_APPS = [
 #configuracion de CORS
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Agrega aquí los orígenes permitidos
+    "http://localhost:3000",
+    "https://front-trasteat-e0816f908339.herokuapp.com",
+    "http://trasteat.space",  # Agrega aquí los orígenes permitidos
 ]
 
 CORS_ALLOW_METHODS = [
