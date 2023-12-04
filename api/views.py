@@ -114,6 +114,7 @@ def generar_excel(request):
             hoja_excel.row_dimensions[6].height = 27
             hoja_excel.row_dimensions[7].height = 27
             hoja_excel.row_dimensions[8].height = 20
+            hoja_excel.row_dimensions[9].height = 2
 
 
             # Agregar encabezados y valores
